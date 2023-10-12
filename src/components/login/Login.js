@@ -34,6 +34,8 @@ export default function Login({setLoginUser}) {
       })
   }
   return (
+    <>
+ <div className='container'>
     <div className='login'>
       <h2>Login</h2>
       {console.log("User", user)}
@@ -46,6 +48,8 @@ export default function Login({setLoginUser}) {
       {/* <div className='button' onClick={ () => history.push("/register")}>Login</div> */}
       <div className='button' onClick={() => navigate("/register")}>Register</div>
     </div>
+    </div>
+    </>
   )
 }
 

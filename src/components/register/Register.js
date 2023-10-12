@@ -46,6 +46,8 @@ export default function Register({setLoginUser}) {
   //====================
 
   return (
+    <>
+    <div className='container'>
     <div className='register'>
       <h2>Register</h2>
       {console.log("Userr", user)}
@@ -59,5 +61,7 @@ export default function Register({setLoginUser}) {
       {/* <div className='button' onClick={ () => history.push("/login")}>Login</div> */}
       <div className='button' onClick={ () => navigate("/login")}>Login</div>
     </div>
+    </div>
+    </>
   )
 }

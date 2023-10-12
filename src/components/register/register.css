@@ -1,12 +1,17 @@
+ 
 .register {
     width: 400px;
-    background: #fff;
-    border: 1px solid #dddfe2;
+    background: rgba(245, 247, 247, 0.2); 
+    /* // Make sure this color has an opacity of less than 1 */
+    backdrop-filter: blur(8px); 
+    /* // This be the blur */
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     border-radius: 8px;
     padding: 1rem;
     align-items: center;
     text-align: center;
+    margin-top: 50px;
+    margin-left: 700px;
 }
 .register > input {
     border-radius: 8px;
@@ -19,8 +24,8 @@
     font-size: 1rem;
 }
 .register > .button{
-    background: #1877f2;
-    border: 1px solid #1877f2;
+    /* background: #1877f2; */
+    /* border: 1px solid #1877f2; */
     color: #fff;
     font-size: 1.25rem;
     padding: 0.5rem;
@@ -28,4 +33,8 @@
     border-radius: 8px;
     outline: none;
     cursor: pointer;
+    background: rgba(238, 209, 209, 0.2); 
+    /* // Make sure this color has an opacity of less than 1 */
+    backdrop-filter: blur(3px); 
+    /* // This be the blur */
 }

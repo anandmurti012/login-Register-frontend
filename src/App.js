@@ -5,6 +5,8 @@ import Login from './components/login/Login';
 import Home from './components/home/Home';
 import { BrowserRouter , Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
+ 
+
 
 function App() {
   const [user, setLoginUser] = useState({})
@@ -14,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path='/' element= {
-              user && user._id ? <Home setLoginUser={setLoginUser}/> : <Login setLoginUser={setLoginUser}/>
+              user && user._id ? <Home  setLoginUser={setLoginUser}/> : <Login setLoginUser={setLoginUser}/>
             }>
            
           </Route>
